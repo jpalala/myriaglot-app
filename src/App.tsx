@@ -25,10 +25,10 @@ function Header() {
                 <nav className="hidden md:flex items-center gap-6 text-sm text-slate-400">
                     <a href="#languages" className="hover:text-white transition-colors">
                         Languages
-                    </a>
+                    </a> &#47;{" "}
                     <a href="#resources" className="hover:text-white transition-colors">
                         Resources
-                    </a>
+                    </a> &#47;{" "}
                     <a href="#about" className="hover:text-white transition-colors">
                         About
                     </a>
