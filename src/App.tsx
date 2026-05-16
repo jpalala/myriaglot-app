@@ -6,18 +6,10 @@ import {
 } from "lucide-react";
 import { FaGithub } from "react-icons/fa";
 
-import languages from "@/data/languages";
+import { languages } from "@/data/languages";
+import type { Language } from "@/data/languages";
 import LanguageCard from "@/components/language/LanguageCard";
 import HeroSection from "@/components/sections/HeroSection";
-
-// 2. Add an explicit type interface for your language objects
-interface Language {
-    id: string;
-    name: string;
-    description: string;
-    awesomeLink: string;
-    color: string;
-}
 
 function Header() {
     return (

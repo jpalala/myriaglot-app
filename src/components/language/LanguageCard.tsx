@@ -1,11 +1,19 @@
 import { ChevronDown, ExternalLink } from 'lucide-react';
-import { FaGithub } from "react-icons";
+import { FaGithub } from "react-icons/fa";
+
+import type { Language } from "@/data/languages";
+
+interface LanguageCardProps {
+  lang: Language;
+  isOpen: boolean;
+  onToggle: () => void;
+}
 
 export default function LanguageCard({
   lang,
   isOpen,
   onToggle,
-}) {
+}: LanguageCardProps) {
   return (
     <article
       className={`
