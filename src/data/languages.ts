@@ -1,7 +1,25 @@
-export const languages = [
+export interface LanguageResource {
+    title: string;
+    url: string;
+}
+
+export interface Language {
+    id: string;
+    name: string;
+    color: string;
+    accent: string;
+    bgAccent: string;
+    description: string;
+    awesomeLink: string;
+    resources: LanguageResource[];
+}
+
+export const languages: Language[] = [
     {
         id: 'java',
         name: 'Java',
+        color: 'from-orange-500 to-red-600',
+        accent: 'border-orange-500',
         bgAccent: 'bg-orange-500/10',
         description: 'Enterprise-grade, object-oriented programming language',
         awesomeLink: 'https://github.com/akullpp/awesome-java',
